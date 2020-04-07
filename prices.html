@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hotel Virgat | Prices</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top" id="menu">
+        <div class="container nopadding">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-logo" href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="about.html">About Us</a></li>
+                      <li class="active">
+                        <a href="book.html">
+                          <i class="fa fa-key" aria-hidden="true"></i>
+                          Rooms</a>
+                      </li>
+                      
+                      <li><a href="prices.html">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Price Listing</a>
+                      </li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="login.html">Login/SignUp</a></li>
+                    </ul>
+              </div>
+        </div>
+    </nav>
+    <div class="container m-t">
+
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-3 col-lg-offset-2">
+                <div class="form-group form-group-lg form-group-icon-left text-center">
+                    <label class="font-black">Check-in Date</label>
+                    <div class="text-placeholder">
+                        <i class="fa fa-calendar input-icon check_in_date_icon" aria-hidden="true"></i>
+                        <input class="form-control date-pick pl40" data-date-format="M d, yyyy" id="check_in_date" name="check_in_date" placeholder="DD/MM/YYYY"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-3">
+                <div class="form-group form-group-lg form-group-icon-left text-center">
+                    <label class="font-black">Check-out Date</label>
+                    <div class="text-placeholder">
+                        <i class="fa fa-calendar input-icon check_out_date_icon" aria-hidden="true"></i>
+                        <input class="form-control date-pick pl40" data-date-format="M d, yyyy" id="check_out_date" name="check_out_date" placeholder="DD/MM/YYYY"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-3">
+                <div class="form-group form-group-lg form-group-icon-left text-center">
+                    <label class="font-black">Preferential Code</label>
+                    <div class="text-placeholder">
+                        <i class="fa fa-barcode input-icon" aria-hidden="true"></i>
+                        <input class="form-control pl40" name="special_code" type="text" placeholder="CODE" id="check_code"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center col-sm-12">
+                <div class="gap"></div>
+                <div class="col-sm-2 col-md-3 hidden-xs"></div>
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <p class="bookDirect"><b>BOOK DIRECT</b>
+                        <small class="text-color text-left">BEST GUARANTEED RATE!</small>
+                    </p>
+                </div>
+                <button  class="col-xs-12 col-sm-4 col-md-3 btn btn-warning btn-lg bookwidBtn"  type="submit">BOOK A ROOM</button>
+                <div class="clearfix"></div>
+                <div class="mb30"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="row">
+            <div class="text-center">
+                <h3>PRICING</h3>
+                <h4 class="text-color">Select a payment plan for yourself</h4>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="thumbnail">
+                    <img src="img/room-double.jpg" alt="room-double">
+                    <div class="caption">
+                        <h5 class="text-color">BOOK NOW AND GET 20% OFF</h5>
+                        <ul>
+                            <li>Book less than 7days prior to arrival and get 20% off</li>
+                            <li>Unlimited Wi-Fi/internet access</li>
+                            <li>Access to the Gym, Spa and outdoor pool</li>
+                            <li>Offer is subject to availability</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="btn btn-default" role="button">₹1900 per night</a>
+                            <a href="#" class="btn btn-warning" role="button">BOOK A ROOM</a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="thumbnail">
+                    <img src="img/room-weekend.jpg" alt="room-weekend">
+                    <div class="caption">
+                        <h5 class="text-color">LONG WEEKEND DEAL</h5>
+                        <ul>
+                            <li>Buffet Breakfast for two persons at Corniche</li>
+                            <li>Complimentary unlimited Wi-Fi /Internet Access</li>
+                            <li>Use of the Health Club and Spa facilities  and swimming pool</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="btn btn-default" role="button">₹1700 per night</a>
+                            <a href="#" class="btn btn-warning" role="button">BOOK A ROOM</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="thumbnail">
+                    <img src="img/room-suite.jpg" alt="room-suite">
+                    <div class="caption">
+                        <h5 class="text-color">FLASH SALE 30% OFF</h5>
+                        <ul>
+                            <li>Complimentary unlimited Wi-Fi/internet access in the guestrooms.</li>
+                            <li>Use of the Health Club and Spa facilities and swimming pool.</li>
+                            <li>Booking Period until December 31st, 2020</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="btn btn-default" role="button">₹2300 per night</a>
+                            <a href="#" class="btn btn-warning" role="button">BOOK A ROOM</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="thumbnail">
+                    <img src="img/room-double.jpg" alt="room-double">
+                    <div class="caption">
+                        <h5 class="text-color">BOOK NOW AND GET 20% OFF</h5>
+                        <ul>
+                            <li>Book less than 7days prior to arrival and get 20% off</li>
+                            <li>Unlimited Wi-Fi/internet access</li>
+                            <li>Access to the Gym, Spa and outdoor pool</li>
+                            <li>Offer is subject to availability</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="btn btn-default" role="button">₹1900 per night</a>
+                            <a href="#" class="btn btn-warning" role="button">BOOK A ROOM</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="thumbnail">
+                    <img src="img/room-weekend.jpg" alt="room-weekend">
+                    <div class="caption">
+                        <h5 class="text-color">LONG WEEKEND DEAL</h5>
+                        <ul>
+                            <li>Buffet Breakfast for two persons at Corniche</li>
+                            <li>Complimentary unlimited Wi-Fi /Internet Access</li>
+                            <li>Use of the Health Club and Spa facilities  and swimming pool</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="btn btn-default" role="button">₹1700 per night</a>
+                            <a href="#" class="btn btn-warning" role="button">BOOK A ROOM</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="thumbnail">
+                    <img src="img/room-suite.jpg" alt="room-suite">
+                    <div class="caption">
+                        <h5 class="text-color">FLASH SALE 30% OFF</h5>
+                        <ul>
+                            <li>Complimentary unlimited Wi-Fi/internet access in the guestrooms.</li>
+                            <li>Use of the Health Club and Spa facilities and swimming pool.</li>
+                            <li>Booking Period until December 31st, 2020.</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="btn btn-default" role="button">₹2300 per night</a>
+                            <a href="#" class="btn btn-warning" role="button">BOOK A ROOM</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="container-fluid  text-center">
+    <span>&copy Manish Virgat | 2020</span>
+</footer>
+</body>
+</html>
