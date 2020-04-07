@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hotel Virgat | Book a Room</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="menu">
+        <div class="container nopadding">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbar-logo" href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="about.html">About Us</a></li>
+                      <li class="active">
+                        <a href="book.html">
+                          <i class="fa fa-key" aria-hidden="true"></i>
+                          Rooms</a>
+                      </li>
+                      
+                      <li><a href="prices.html">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Price Listing</a>
+                      </li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="login.html">Login/SignUp</a></li>
+                    </ul>
+              </div>
+        </div>
+    </nav>
+
+    <div class="container text-center m-t">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="book-container">
+                    <div class="card book-card" data-color="orange" id="wizard">
+                        <form action="" method="">
+                            <div class="book-header">
+                                <h3 class="book-title">
+                                    BOOK A ROOM
+                                </h3>
+                                <h4 class="info-text">This information will let us know more about you.</h4>
+                            </div>
+                            <div class="book-navigation">
+                                <ul class="nav nav-pills">
+                                    <li class="active" style="width: 33.3%"><a href="#details" data-toggle="tab">Account</a></li>
+                                    <li style="width: 33.3%"><a href="#captain" data-toggle="tab">Room Type</a></li>
+                                    <li style="width: 33.3%"><a href="#description" data-toggle="tab">Extra Details</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="details">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <h4 class="info-text"> Let's start with the basic details.</h4>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="input-group">
+													<span class="input-group-addon">
+														<i class="fa fa-envelope" aria-hidden="true"></i>
+													</span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Your Email</label>
+                                                    <input name="name" type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group">
+													<span class="input-group-addon">
+														<i class="fa fa-lock" aria-hidden="true"></i>
+													</span>
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">Your Password</label>
+                                                    <input name="name2" type="password" class="form-control">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Country</label>
+                                                <select class="form-control">
+                                                    <option disabled="" selected=""></option>
+                                                    <option value="Australia"> Australia</option>
+                                                    <option value="Austria"> Austria</option>
+                                                    <option value="Argentina"> Argentina</option>
+                                                    <option value="American Samoa"> American Samoa</option>
+                                                    <option value="Bahamas"> Bahamas</option>
+                                                    <option value="Belgium"> Belgium</option>
+                                                    <option value="...">...</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group label-floating">
+                                                <label class="control-label">Daily Budget</label>
+                                                <select class="form-control">
+                                                    <option disabled="" selected=""></option>
+                                                    <option value="Australia"> ₹1000</option>
+                                                    <option value="Austria"> ₹1000 - ₹5000</option>
+                                                    <option value="Argentina"> ₹5000 - ₹10000</option>
+                                                    <option value="American Samoa"> ₹10000+</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="captain">
+                                    <h4 class="info-text">What type of room would you want? </h4>
+                                    <div class="row">
+                                        <div class="col-sm-10 col-sm-offset-1">
+                                            <div class="col-sm-4">
+                                                <div class="choice" data-toggle="book-radio"
+                                                     title="This is good if you travel alone.">
+                                                    <input type="radio" name="job" value="Design">
+                                                    <div class="icon">
+                                                        <i class="fa fa-bed" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h6>Premier Room</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="choice" data-toggle="book-radio"
+                                                     title="Select this room if you're traveling with your family.">
+                                                    <input type="radio" name="job" value="Code">
+                                                    <div class="icon">
+                                                        <i class="fa fa-home" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h6>Premier Regency</h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="choice" data-toggle="book-radio"
+                                                     title="Select this option if you are coming with your team.">
+                                                    <input type="radio" name="job" value="Code">
+                                                    <div class="icon">
+                                                        <i class="fa fa-building" aria-hidden="true"></i>
+                                                    </div>
+                                                    <h6>Executive Suite</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="description">
+                                    <div class="row">
+                                        <h4 class="info-text"> Drop us a small description.</h4>
+                                        <div class="col-sm-6 col-sm-offset-1">
+                                            <div class="form-group">
+                                                <label>Room description</label>
+                                                <textarea class="form-control" placeholder="" rows="6"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Example</label>
+                                                <p class="description">"The room really nice name is recognized as being
+                                                    a really awesome room. We use it every sunday when we go fishing and
+                                                    we catch a lot. It has some kind of magic shield around it."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-footer">
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container m-t-y">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="img/room-one.jpg" target="_blank">
+                            <img src="img/room-one.jpg" alt="room-one" style="width:100%">
+                            <div class="caption">
+                                <p>Premier Room</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="img/room-two.jpg" target="_blank">
+                            <img src="img/room-two.jpg" alt="room-two" style="width:100%">
+                            <div class="caption">
+                                <p>Premier Regency</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="img/room-three.jpg" target="_blank">
+                            <img src="img/room-three.jpg" alt="room-three" style="width:100%">
+                            <div class="caption">
+                                <p>Executive Suite</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="panel panel-warning">
+                <div class="panel-heading">Rooms Available</div>
+                
+                <table class="table">
+                    <tr>
+                        <td>Book Now and Get 20% Off (Room Only)</td>
+                        <td>Book Now and Get 20% Off (with Breakfast)</td>
+                        <td>Best Available Rate (Room Only)</td>
+                    </tr>
+                    <tr>
+                        <td>Room size: 40 sq. m.</td>
+                        <td>Room size: 45-48 sq. m.</td>
+                        <td>Room size: 88 sq. m.</td>
+                    </tr>
+                    <tr>
+                        <td>Available in King Bed</td>
+                        <td>Available in King Bed</td>
+                        <td>Available in King Bed</td>
+                    </tr>
+                    <tr>
+                        <td>King-size bed: 72" x 80"; Premier Rooms are non-smoking.</td>
+                        <td>King-size bed: 72" x 80"; Premier Rooms are non-smoking.</td>
+                        <td>King-size bed: 72" x 80"; Premier Rooms are non-smoking.</td>
+                    </tr>
+                    <tr>
+                        <td>All major credit cards accepted</td>
+                        <td>All major credit cards accepted</td>
+                        <td>All major credit cards accepted</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <footer class="container-fluid  text-center">
+        <span>&copy Manish Virgat | 2020</span>
+    </footer>
+</div>
+</body>
+</html>
